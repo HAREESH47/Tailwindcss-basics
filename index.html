@@ -8,27 +8,183 @@
     <!--tailwindcss-->
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body class="bg-green-300">
-    <h1 class="font-black m-10 text-center mb-5">Whatapp ui (screen #1)</h1>
-    <section class="bg-white">
-        <div class="bg-green-800">
-      <h4>Whatsapp</h4>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="currentColor"
-            d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
-          />
-        </svg>
+  <body class="bg-green-300 p-10">
+    <h1 class="font-black text-center mb-5">Whatapp ui (screen #1)</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2"/></svg>
+    <section class= "max-w-sm mx-auto">
+      <!--Title, search, vertical dots-->
+      <div
+        class="bg-emerald-600 text-white px-3 py-5 flex items-center justify-between"
+      >
+        <h4 class="font-semibold">Whatsapp</h4>
+        <div class="flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2"
+            />
+          </svg>
+        </div>
       </div>
+
+      <!-- camera, chats, status, calls-->
+      <ul
+        class="bg-emerald-600 px-3 py-2 text-white flex justify-between items-center space-x-4"
+      >
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current w-6"
+          >
+            <path
+              d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z"
+            />
+          </svg>
+        </li>
+
+        <!--chats-->
+        <li class="flex items-center flex-1 justify-between">
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2 relative"
+          >
+            <span class="ml-2">Chats</span>
+            <span
+              class="bg-white text-emerald-700 p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >10</span
+            >
+            <div
+              class="absolute right-0 top-8 bottom-0 w-20 h-1 bg-white"
+            ></div>
+          </div>
+
+          <!--status-->
+
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2"
+          >
+            <span class="ml-2">status</span>
+          </div>
+
+          <!--calls-->
+
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2"
+          >
+            <span class="ml-2">calls</span>
+          </div>
+        </li>
+      </ul>
+
+      <!--Chat screen-->
+
+      <div class="bg-white">
+
+        <div class="bg-white px-3 py-5 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?name=Hareesh M&background=randomC&color=fff"
+              alt="Hareesh M"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Hareesh M</h4>
+            <p class="text-gray-600 text-sm font-semibold">Iam a Developer!!!</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-green-600 font-semibold">07:00PM</span>
+            <span
+              class="bg-emerald-600 text-white p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >1</span
+            >
+          </div>
+        </div>
+  
+        <div class="bg-white px-3 py-5 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200hover:cursor-pointer hover:bg-gray-200">
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?name=Alex M&background=random&color=fff"
+              alt="Alex"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Alex</h4>
+            <p class="text-gray-600 text-sm font-semibold">Iam a Developer!!!</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-green-600 font-semibold">07:00PM</span>
+            <span
+              class="bg-emerald-600 text-white p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >1</span
+            >
+          </div>
+        </div>
+  
+        <div class="bg-white px-3 py-5 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?name=Steve Roges M&background=random&color=fff"
+              alt="Steve Roges"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Steve Roges</h4>
+            <p class="text-gray-600 text-sm font-semibold">Iam a Developer!!!</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-green-600 font-semibold">07:00PM</span>
+            <span
+              class="bg-emerald-600 text-white p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >1</span
+            >
+          </div>
+        </div>
+  
+        <div class="bg-white px-3 py-5 flex space-x-4 items-center hover:cursor-pointer hover:bg-gray-200">
+          <div>
+            <img
+              src="https://ui-avatars.com/api/?name=Tony Stark&background=random&color=fff"
+              alt="Tony Stark"
+              class="rounded-full"
+            />
+          </div>
+          <div class="flex-1">
+            <h4 class="font-semibold">Tony Stark</h4>
+            <p class="text-gray-600 text-sm font-semibold">Iam a Developer!!!</p>
+          </div>
+          <div class="flex flex-col items-center space-y-1">
+            <span class="text-green-600 font-semibold">07:00PM</span>
+            <span
+              class="bg-emerald-600 text-white p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >1</span
+            >
+          </div>
+        </div>
       </div>
+      
+
     </section>
   </body>
 </html>
