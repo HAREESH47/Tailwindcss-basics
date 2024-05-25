@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp UI</title>
+
+    <!--tailwindcss-->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="bg-gray-900 p-10">
+   
+
+    <section class="max-w-sm mx-auto">
+      <!--Title, search, vertical dots-->
+      <div
+        class="bg-emerald-800 text-white px-3 py-5 flex items-center justify-between"
+      >
+        <h4 class="font-semibold">Whatsapp</h4>
+        <div class="flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- camera, chats, status, calls-->
+      <ul
+        class="bg-emerald-800 px-3 py-2 text-white flex justify-between items-center space-x-4"
+      >
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="fill-current w-6"
+          >
+            <path
+              d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z"
+            />
+          </svg>
+        </li>
+
+        <!--chats-->
+        <li class="flex items-center flex-1 justify-between">
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2 "
+          >
+          <a href="./index.html"class="ml-2">Chats</a>
+            <span
+              class="bg-white text-emerald-700 p-0.5 rounded-full w-5 h-5 text-xs flex items-center justify-center font-semibold"
+              >5</span
+            >
+            
+          </div>
+
+          <!--status-->
+
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2 "
+          >
+            <a href="./status.html" class="ml-2">STATUS</a>
+            
+          </div>
+
+          <!--calls-->
+
+          <div
+            class="uppercase font-medium text-sm flex items-center space-x-2"
+          >
+          <a href="./calls.html"class="ml-2">Calls</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--Chat screen-->
+
+      <div class="bg-white ">
+        <!--my status-->
+        <div class="px-3 pt-3 pb-3 flex items-center justify-between space-x-4 ">
+          <img
+            src="https://media-tir3-1.cdn.whatsapp.net/v/t61.24694-24/389667921_536392188686524_200123227982647102_n.jpg?ccb=11-4&oh=01_ASC8ZH_FjRjQYBS4Cj8V_7OSqEZZdlY5e9p_3yy4dQq3mQ&oe=662A5D34&_nc_sid=e6ed6c&_nc_cat=105"
+            alt="Hareesh"
+            class="rounded-full w-16 h-16 border-2 border-emerald-800 p-0.5 hover:cursor-pointer hover:scale-110"
+          />
+
+         
+        <div class="flex-1 flex items-center justify-between">
+          <div>
+            <h4 class="font-semibold">My Status</h4>
+          <small class="text-gray-600">Today 12:00 am</small>
+          </div>
+
+          <div>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current text-emerald-800 "
+          >
+            <path
+              d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2"
+            />
+          </svg>
+          </div>
+        </div>
+      
+       </div>
+
+       <!--Recent updates-->
+       <div class=" text-sm">
+        <h4 class="px-3 py-2 text-gray-600 font-medium">Recent Updates</h4>
+       </div>
+
+       <div class="px-3 py-2 flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-200">
+        <img
+            src="https://production.listennotes.com/podcasts/iman-gadzhi-iman-gadzhi-community-PY4z3Gi9dnE-9Wd3CqxbnLp.1400x1400.jpg"
+            alt="Iman Gadzhi"
+            class="rounded-full w-16 h-16 border-2 border-emerald-800 p-0.5"
+          />
+          <div>
+            <h4 class="font-semibold">Iman Gadzhi</h4>
+            <small class="text-gray-600">just now</small>
+          </div>
+       </div>
+
+       <div class="px-3 py-2 flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-200">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmets9PePmJQlVf_oW53NJi96z6nCZ7zQsacUo6GTOa1e6eANQMlzuCYA662jh5Ra4fm4&usqp=CAU"
+            alt="David Goggins"
+            class="rounded-full w-16 h-16 border-2 border-emerald-800 p-0.5"
+          />
+          <div>
+            <h4 class="font-semibold">David Goggins</h4>
+            <small class="text-gray-600">Today, 7:30 pm</small>
+          </div>
+       </div>
+
+       <div class="px-3 py-2 flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-200">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_YoDv2gtIcg-RSILlmY8bc46WoiE19DftsVNLbblNTgqyME55eWK7qs3aTn5GJlDusIg&usqp=CAU"
+            alt="Ronaldo"
+            class="rounded-full w-16 h-16 border-2 border-emerald-800 p-0.5"
+          />
+          <div>
+            <h4 class="font-semibold">Ronaldo</h4>
+            <small class="text-gray-600">Today, 7:07 pm</small>
+          </div>
+       </div>
+
+       <div class=" text-sm">
+        <h4 class="px-3 py-2 text-gray-600 font-medium">Recently Viewed</h4>
+       </div>
+
+       <div class="px-3 py-2 flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-200">
+        <img
+            src="https://media.wired.com/photos/650399af65d83ff288720473/1:1/w_1285,h_1285,c_limit/If-Elon-Musk-Had-Been-a-Happy-Child,-Would-He-Still-Be-Launching-Rockets--Business-Redux-h_16082330.jpg"
+            alt="Elon Musk"
+            class="rounded-full w-16 h-16 border-2 border-gray-400 p-0.5"
+          />
+          <div>
+            <h4 class="font-semibold">Elon Musk</h4>
+            <small class="text-gray-600">Today, 6:10 pm</small>
+          </div>
+       </div>
+
+       <div class="px-3 py-2 flex items-center space-x-4 hover:cursor-pointer hover:bg-gray-200">
+        <img
+            src="https://images.mktw.net/im-533280?width=1285&height=1288"
+            alt="Mark Zuckerberg"
+            class="rounded-full w-16 h-16 border-2 border-gray-400 p-0.5"
+          />
+          <div>
+            <h4 class="font-semibold">Mark Zuckerberg</h4>
+            <small class="text-gray-600">Today, 6:00 pm</small>
+          </div>
+       </div>
+      </div>
+    </section>
+  </body>
+</html>
